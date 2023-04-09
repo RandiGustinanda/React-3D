@@ -6,6 +6,7 @@ import Contact from './Component/Contact';
 import Footer from './Component/Footer';
 import Work from './Component/Work';
 import styled from 'styled-components';
+import Navbar from './Component/Navbar';
 
 const Container = styled.div`
   height: 100vh;
