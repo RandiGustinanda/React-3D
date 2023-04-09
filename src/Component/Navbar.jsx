@@ -10,7 +10,7 @@ const Container = styled.div`
     width: 1400px;
     justify-content: space-between;
     display:flex;
-    padding-top:10px;
+  
 `;
 const Link = styled.div`
     display:flex;
@@ -22,7 +22,7 @@ const Link = styled.div`
 const Logo = styled.h1`
     color:black;
     
-    font-size : 20px;
+    font-size : 30px;
 `;
 
 const But = styled.div`
