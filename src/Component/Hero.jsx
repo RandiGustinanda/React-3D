@@ -28,6 +28,7 @@ const Kiri = styled.div`
   display:flex;
   align-items:center;
   justify-content:center
+  padding-right:500px;
 `;
 const Kanan = styled.div`
 width:600px;
@@ -49,6 +50,7 @@ const Button = styled.button`
   border-radius:7px;
   background-color:black;
   color:white;
+  border:none;
 `;
 const Span = styled.span`
  
