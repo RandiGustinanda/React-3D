@@ -2,11 +2,10 @@ import { Canvas } from "@react-three/fiber";
 import React from "react";
 import styled from "styled-components";
 import { OrbitControls, Stage } from "@react-three/drei";
-import Atlas from "./Atlas";
 import ProjectCard from "./Card";
 import C from "./C";
 import Re from "./React";
-import Tml from "./Html";
+
 import Sharp from "./Sharp";
 
 const Section = styled.div`
@@ -59,7 +58,7 @@ const Lighting = () => {
 const Work = () =>{
 return(
   <Section>
-        <Container>
+         <Container>
          <Title><h1>My Project</h1></Title>
         <TopContainer>
           <ProjectCard title="Momoshusi Admin" image="/logo192.png" description="admin momoshusi menggunakan react js" />
@@ -68,7 +67,7 @@ return(
         </TopContainer>
         <BottomContainer>
           <Canvas>
-            <Lighting/>
+             <Lighting/>
             <C/>
             <OrbitControls enableZoom={false}/>
           </Canvas>
@@ -86,15 +85,15 @@ return(
             <Lighting/>
             <Sharp/>
             <OrbitControls enableZoom={false}/>
-          </Canvas>
+          </Canvas>  
           <Canvas>
             <Lighting/>
             <Re/>
             <OrbitControls enableZoom={false}/>
-          </Canvas>
+          </Canvas> 
         </BottomContainer>
         
-        </Container>
+        </Container>  
         
       
      

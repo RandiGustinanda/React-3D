@@ -46,3 +46,6 @@ const ProjectCard = ({ title, image, description }) => {
 };
 
 export default ProjectCard;
+   // "predeploy":"npm run build",
+    // "deploy" :"gh-pages -d build"
+    // "homepage": "http://RandiGustinanda.github.io/React-3D",

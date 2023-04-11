@@ -11,7 +11,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Tml(props) {
-  const { nodes, materials } = useGLTF('/html-transformed.glb')
+  const { nodes, materials } = useGLTF('React-3D/html-transformed.glb')
   return (
     <group {...props} dispose={null} >
       <group rotation={[-Math.PI / 2, 0, -Math.PI / 2]}>
@@ -28,4 +28,4 @@ export default function Tml(props) {
   )
 }
 
-useGLTF.preload('/html-transformed.glb')
+useGLTF.preload('React-3D/html-transformed.glb')

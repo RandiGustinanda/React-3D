@@ -18,7 +18,7 @@ export default function C(props) {
   useFrame((state, delta) => {
     groupRef.current.rotation.y += delta * 0.9 // mengatur rotasi pada sumbu y
   })
-  const { nodes, materials } = useGLTF('/c-transformed.glb')
+  const { nodes, materials } = useGLTF('/React-3D/c-transformed.glb')
   return (
     <group ref={groupRef} {...props} dispose={null} scale={[0.02,0.02,0.02]}>
       <group scale={0.01}> 
@@ -28,4 +28,4 @@ export default function C(props) {
   )
 }
 
-useGLTF.preload('/c-transformed.glb')
+useGLTF.preload('/React-3D/c-transformed.glb')

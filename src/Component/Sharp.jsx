@@ -16,7 +16,7 @@ export default function Sharp(props) {
   useFrame((state, delta) => {
     groupRef.current.rotation.y += delta * 0.9 // mengatur rotasi pada sumbu y
   })
-  const { nodes, materials } = useGLTF('/sharp-transformed.glb')
+  const { nodes, materials } = useGLTF('/React-3D/sharp-transformed.glb')
   return (
     <group ref={groupRef} {...props} dispose={null} scale={[0.02,0.02,0.02]}>
       <group scale={0.01}>
@@ -26,4 +26,4 @@ export default function Sharp(props) {
   )
 }
 
-useGLTF.preload('/sharp-transformed.glb')
+useGLTF.preload('/React-3D/sharp-transformed.glb')

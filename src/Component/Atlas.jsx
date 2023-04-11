@@ -11,7 +11,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Atlas(props) {
-  const { nodes, materials } = useGLTF('/atlas-transformed.glb')
+  const { nodes, materials } = useGLTF('http://RandiGustinanda.github.io/React-3D/atlas-transformed.glb')
   return (
     <group {...props} dispose={null} scale={[0.01,0.01,0.01]}>
       <group rotation={[-Math.PI / 2, 0, 0 ]}>
@@ -22,4 +22,4 @@ export default function Atlas(props) {
   )
 }
 
-useGLTF.preload('/atlas-transformed.glb')
+useGLTF.preload('http://RandiGustinanda.github.io/React-3DReact-3D/atlas-transformed.glb')

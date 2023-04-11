@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import { Canvas } from "@react-three/fiber";
 import Statue from "./Statue";
 import {OrbitControls, Stage,Shadow} from "@react-three/drei";
-import { TypeAnimation } from "react-type-animation";
+
 
 const Section = styled.div`
   height: 100vh;
@@ -118,8 +118,8 @@ const Hero = () => {
             <Canvas style={{ width: "70%", height: "80%" }} 
                 shadowMap>
                 <Lighting/>
-                <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} castShadow />
-                <Statue /> 
+                <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} castShadow /> 
+                 <Statue /> 
               <OrbitControls enableZoom={false}/>
               <Shadow opacity={0.5} />
             </Canvas>   

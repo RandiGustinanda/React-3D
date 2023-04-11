@@ -3,7 +3,7 @@ import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 
 export default function Statue(props) {
-  const { nodes, materials } = useGLTF('/statue-transformed.glb')
+  const { nodes, materials } = useGLTF('/React-3D/statue-transformed.glb')
   
   const groupRef = useRef()
 
@@ -31,4 +31,4 @@ export default function Statue(props) {
   )
 }
 
-useGLTF.preload('/statue-transformed.glb')
+useGLTF.preload('/React-3D/statue-transformed.glb')
